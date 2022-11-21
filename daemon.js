@@ -542,7 +542,6 @@ Selama ${clockString(new Date - user.afkTime)}
              break
              case prefix+'sticker': {
             if (!quoted) throw `*Balas Video/Image Dengan Caption* ${prefix + command}`
-            m.reply(mess.wait)
                     if (/image/.test(mime)) {
                 let media = await quoted.download()
                 let encmedia = await daemon.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
