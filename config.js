@@ -9,9 +9,9 @@ global.APIKeys = {
 	'https://zenzapis.xyz': '8dcf0a2e877b',
 }
 
-global.owner = ['6288277525802']
-global.ownernomer = "6288277525802"
-global.premium = ['6288277525802']
+global.owner = ['12014831585']
+global.ownernomer = "12014831585"
+global.premium = ['12014831585']
 global.packname = 'Daemon Botz'
 global.author = ''
 global.sessionName = 'session'  
