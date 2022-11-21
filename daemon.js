@@ -667,7 +667,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 あ ${prefix}menfess
 ──────────────•`
                    let buttons = [{ buttonId: '#owner', buttonText: { displayText: 'Owner' }, type: 1 }]
-            await daemon.sendButtonText(m.chat, buttons, anu, nyoutube, m)
+            await daemon.sendButtonText(m.chat, buttons, anu, watermak, m)
             }         
 break
             default:
