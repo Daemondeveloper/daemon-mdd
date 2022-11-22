@@ -17,7 +17,7 @@ const hariini = moment.tz('Asia/Jakarta').format('dddd, DD MMMM YYYY')
 const barat = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 const tengah = moment.tz('Asia/Makassar').format('HH:mm:ss')
 const timur = moment.tz('Asia/Jayapura').format('HH:mm:ss')
-const watermak = ('DaemonBotz')
+const watermak = ('© Daemon V1')
 const ini_mark = `0@s.whatsapp.net`
 const ownernya = ownernomer + '@s.whatsapp.net'
 
@@ -225,7 +225,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebaklagu[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await daemon.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'Tebak Lagu' }, type: 1 }], `🎮 Tebak Lagu 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, daemon.user.name, m)
+                await daemon.sendButtonText(m.chat, [{ buttonId: 'tebak lagu', buttonText: { displayText: 'Tebak Lagu' }, type: 1 }], `🎮 Tebak Lagu 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, watermak, m)
                 delete tebaklagu[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
         }
@@ -243,7 +243,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebakgambar[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await daemon.sendButtonText(m.chat, [{ buttonId: 'tebak gambar', buttonText: { displayText: 'Tebak Gambar' }, type: 1 }], `🎮 Tebak Gambar 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, daemon.user.name, m)
+                await daemon.sendButtonText(m.chat, [{ buttonId: 'tebak gambar', buttonText: { displayText: 'Tebak Gambar' }, type: 1 }], `🎮 Tebak Gambar 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, watermak, m)
                 delete tebakgambar[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
         }
@@ -252,7 +252,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebakkata[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await daemon.sendButtonText(m.chat, [{ buttonId: 'tebak kata', buttonText: { displayText: 'Tebak Kata' }, type: 1 }], `🎮 Tebak Kata 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, daemon.user.name, m)
+                await daemon.sendButtonText(m.chat, [{ buttonId: 'tebak kata', buttonText: { displayText: 'Tebak Kata' }, type: 1 }], `🎮 Tebak Kata 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, watermak, m)
                 delete tebakkata[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
         }
@@ -262,7 +262,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             jawaban = caklontong[m.sender.split('@')[0]]
 	    deskripsi = caklontong_desk[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await daemon.sendButtonText(m.chat, [{ buttonId: 'tebak lontong', buttonText: { displayText: 'Tebak Lontong' }, type: 1 }], `🎮 Cak Lontong 🎮\n\nJawaban Benar 🎉\n*${deskripsi}*\n\nIngin bermain lagi? tekan button dibawah`, daemon.user.name, m)
+                await daemon.sendButtonText(m.chat, [{ buttonId: 'tebak lontong', buttonText: { displayText: 'Tebak Lontong' }, type: 1 }], `🎮 Cak Lontong 🎮\n\nJawaban Benar 🎉\n*${deskripsi}*\n\nIngin bermain lagi? tekan button dibawah`, watermak, m)
                 delete caklontong[m.sender.split('@')[0]]
 		delete caklontong_desk[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
@@ -272,7 +272,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebakkalimat[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await daemon.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'Tebak Kalimat' }, type: 1 }], `🎮 Tebak Kalimat 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, daemon.user.name, m)
+                await daemon.sendButtonText(m.chat, [{ buttonId: 'tebak kalimat', buttonText: { displayText: 'Tebak Kalimat' }, type: 1 }], `🎮 Tebak Kalimat 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, watermak, m)
                 delete tebakkalimat[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
         }
@@ -281,7 +281,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebaklirik[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await daemon.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'Tebak Lirik' }, type: 1 }], `🎮 Tebak Lirik 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, daemon.user.name, m)
+                await daemon.sendButtonText(m.chat, [{ buttonId: 'tebak lirik', buttonText: { displayText: 'Tebak Lirik' }, type: 1 }], `🎮 Tebak Lirik 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, watermak, m)
                 delete tebaklirik[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
         }
@@ -290,7 +290,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
             kuis = true
             jawaban = tebaktebakan[m.sender.split('@')[0]]
             if (budy.toLowerCase() == jawaban) {
-                await daemon.sendButtonText(m.chat, [{ buttonId: 'tebak tebakan', buttonText: { displayText: 'Tebak Tebakan' }, type: 1 }], `🎮 Tebak Tebakan 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, daemon.user.name, m)
+                await daemon.sendButtonText(m.chat, [{ buttonId: 'tebak tebakan', buttonText: { displayText: 'Tebak Tebakan' }, type: 1 }], `🎮 Tebak Tebakan 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, watermak, m)
                 delete tebaktebakan[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
         }
@@ -477,10 +477,9 @@ Selama ${clockString(new Date - user.afkTime)}
             
 //Pembatas===========================================
             case prefix+'join': {
-                if (!isCreator) throw m.reply(`Khusus owner`)
+                if (!isCreator) return
                 if (!text) throw 'Masukkan Link Group!'
                 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) throw 'Link Invalid!'
-                m.reply(mess.wait)
                 let result = args[0].split('https://chat.whatsapp.com/')[1]
                 await daemon.groupAcceptInvite(result).then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
             }
@@ -515,7 +514,7 @@ Selama ${clockString(new Date - user.afkTime)}
                         { buttonId: '#antilink on', buttonText: { displayText: 'Anti Link On' }, type: 1 },
                         { buttonId: '#antilink off', buttonText: { displayText: 'Anti Link Off' }, type: 1 }
                     ]
-                    await daemon.sendButtonText(m.chat, buttons, `Mode Antilink`, daemon.user.name, m)
+                    await daemon.sendButtonText(m.chat, buttons, `Mode Antilink`, watermak, m)
                 }
              }
              break
@@ -536,15 +535,14 @@ Selama ${clockString(new Date - user.afkTime)}
                         { buttonId: '#mute on', buttonText: { displayText: 'Mute On' }, type: 1 },
                         { buttonId: '#mute off', buttonText: { displayText: 'Mute Off' }, type: 1 }
                     ]
-                    await daemon.sendButtonText(m.chat, buttons, `Mute Bot`, daemon.user.name, m)
+                    await daemon.sendButtonText(m.chat, buttons, `Mute Bot`, watermak, m)
                 }
              }
-             case 'patrick':
+             case prefix+'patrick':
 daemon.sendMessage(m.chat, {sticker: {url: `https://api.zeeoneofc.xyz/api/telegram-sticker/patrick?apikey=dhmDlD5x`}}, {quoted: m })
              break
              case prefix+'sticker': {
             if (!quoted) throw `*Balas Video/Image Dengan Caption* ${prefix + command}`
-            m.reply(mess.wait)
                     if (/image/.test(mime)) {
                 let media = await quoted.download()
                 let encmedia = await daemon.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
@@ -560,9 +558,9 @@ daemon.sendMessage(m.chat, {sticker: {url: `https://api.zeeoneofc.xyz/api/telegr
             }
             break
             case prefix+'hidetag': {
-            if (!m.isGroup) throw mess.group
-            if (!isBotAdmins) throw mess.botAdmin
-            if (!isAdmins) throw mess.admin
+            if (!m.isGroup) return
+            if (!isBotAdmins) return 
+            if (!isAdmins) return 
             didin.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
             }
              break
@@ -601,13 +599,13 @@ await daemon.sendMedia(m.chat, `https://didinbotz-apii.herokuapp.com/api/maker/t
 
 		    break
             case prefix+'public': {
-                if (!isCreator) throw mess.owner
+                if (!isCreator) return 
                 daemon.public = true
                 m.reply('*Sukse Change To Public Usage*')
             }
             break
             case prefix+'self': {
-                if (!isCreator) throw mess.owner
+                if (!isCreator) return 
                 daemon.public = false
                 m.reply('*Sukses Change To Self Usage*')
             }
@@ -656,10 +654,12 @@ ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type =>
 _CPU Core(s) Usage (${cpus.length} Core CPU)_
 ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
                 `.trim()
-                m.reply(respon)
+                let buttons = [{ buttonId: '#owner', buttonText: { displayText: 'Owner' }, type: 1 }]
+            await daemon.sendButtonText(m.chat, buttons, respon, watermak, m)
             }
             break
             case prefix+'owner': {
+                m.reply(`*jangan spam no owner ku ya kak*`)
                 daemon.sendContact(m.chat, global.owner, m)
             }
             break
@@ -668,6 +668,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 あ ${prefix}antilink
 あ ${prefix}kick
 あ ${prefix}mute
+あ ${prefix}hidetag
 ──────────────•
 「 *CONVERT MENU* 」
 あ ${prefix}attp
@@ -682,7 +683,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 break
             default:
                 if (budy.startsWith('=>')) {
-                    if (!isCreator) return m.reply(mess.owner)
+                    if (!isCreator) return
                     function Return(sul) {
                         sat = JSON.stringify(sul, null, 2)
                         bang = util.format(sat)
@@ -699,7 +700,7 @@ break
                 }
 
                 if (budy.startsWith('>')) {
-                    if (!isCreator) return m.reply(mess.owner)
+                    if (!isCreator) return 
                     try {
                         let evaled = await eval(budy.slice(2))
                         if (typeof evaled !== 'string') evaled = require('util').inspect(evaled)
@@ -710,7 +711,7 @@ break
                 }
 
                 if (budy.startsWith('$')) {
-                    if (!isCreator) return m.reply(mess.owner)
+                    if (!isCreator) return
                     exec(budy.slice(2), (err, stdout) => {
                         if(err) return m.reply(err)
                         if (stdout) return m.reply(stdout)
