@@ -673,6 +673,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 あ ${prefix}attp
 あ ${prefix}ttp
 あ ${prefix}sticker
+あ ${prefix}patrick
 あ ${prefix}menfess
 ──────────────•`
                    let buttons = [{ buttonId: '#owner', buttonText: { displayText: 'Owner' }, type: 1 }]
