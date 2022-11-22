@@ -536,12 +536,15 @@ Selama ${clockString(new Date - user.afkTime)}
                         { buttonId: '#mute on', buttonText: { displayText: 'Mute On' }, type: 1 },
                         { buttonId: '#mute off', buttonText: { displayText: 'Mute Off' }, type: 1 }
                     ]
-                    await prefix.sendButtonText(m.chat, buttons, `Mute Bot`, prefix.user.name, m)
+                    await daemon.sendButtonText(m.chat, buttons, `Mute Bot`, daemon.user.name, m)
                 }
              }
+             case 'patrick':
+daemon.sendMessage(m.chat, {sticker: {url: `https://api.zeeoneofc.xyz/api/telegram-sticker/patrick?apikey=dhmDlD5x`}}, {quoted: m })
              break
              case prefix+'sticker': {
             if (!quoted) throw `*Balas Video/Image Dengan Caption* ${prefix + command}`
+            m.reply(mess.wait)
                     if (/image/.test(mime)) {
                 let media = await quoted.download()
                 let encmedia = await daemon.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
@@ -554,6 +557,13 @@ Selama ${clockString(new Date - user.afkTime)}
             } else {
                 throw `*Kirim Gambar/Video Dengan Caption* ${prefix + command}\nDurasi *Video 1-9 Detik*`
                 }
+            }
+            break
+            case prefix+'hidetag': {
+            if (!m.isGroup) throw mess.group
+            if (!isBotAdmins) throw mess.botAdmin
+            if (!isAdmins) throw mess.admin
+            didin.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
             }
              break
              case prefix+'attp': {
