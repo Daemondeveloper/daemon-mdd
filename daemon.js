@@ -538,8 +538,6 @@ Selama ${clockString(new Date - user.afkTime)}
                     await daemon.sendButtonText(m.chat, buttons, `Mute Bot`, watermak, m)
                 }
              }
-             case prefix+'patrick':
-daemon.sendMessage(m.chat, {sticker: {url: `https://api.zeeoneofc.xyz/api/telegram-sticker/patrick?apikey=dhmDlD5x`}}, {quoted: m })
              break
              case prefix+'sticker': {
             if (!quoted) throw `*Balas Video/Image Dengan Caption* ${prefix + command}`
@@ -664,7 +662,18 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case prefix+'menu': {
-                anu =`「 *GROUP MENU* 」
+            let ownernya = ownernomer + '@s.whatsapp.net'
+            let me = m.sender
+            let ments = [ownernya, me, ini_mark]
+                anu =`「 *INFO BOT* 」
+• hai saya Daemon V1 
+• bot ini berfungsi untuk kebutuhan 
+• keuntungan ? sticker , attp , antilink , dll
+• mau sewa bot ? ketik #owner dan sopan santun
+
+🌏 waktu berjalan bot Daemon : ${runtime(process.uptime())}
+
+「 *GROUP MENU* 」
 あ ${prefix}antilink
 あ ${prefix}kick
 あ ${prefix}mute
@@ -674,11 +683,10 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 あ ${prefix}attp
 あ ${prefix}ttp
 あ ${prefix}sticker
-あ ${prefix}patrick
 あ ${prefix}menfess
 ──────────────•`
                    let buttons = [{ buttonId: '#owner', buttonText: { displayText: 'Owner' }, type: 1 }]
-            await daemon.sendButtonText(m.chat, buttons, anu, watermak, m)
+            await daemon.sendButtonText(m.chat, buttons, anu, watermak, m, {mentions: ments})
             }         
 break
             default:
